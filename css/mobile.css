@@ -1,0 +1,243 @@
+section {
+	padding-top: var(--mobpad);
+}
+
+ul {
+	text-align: left;
+	list-style-type: none;
+	padding: 0;
+}
+
+#intro {
+	padding-top: 5%;
+	border-radius: 10px;
+	width: 100%;
+}
+
+header {
+	margin-top: -5%;
+	padding: 0;
+	text-align: center;
+}
+
+#logo-olga {
+	width: 40%;
+	display: inline-block;
+	background-color: var(--background);
+	border-radius: 10px;
+	padding: 0;
+	margin: 0;
+}
+
+#header-image {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding-left: var(--mobpad);
+	padding-right: var(--mobpad);
+}
+
+#chisiamo {
+	margin-top: 5%;
+}
+
+.chisnap {
+	scroll-snap-align: start;
+	scroll-margin-top: 10%;
+	scroll-padding-top: 10%;
+}
+
+#chisiamo h3 {
+margin-bottom: 5%;
+}
+
+#chisiamo h4 {
+	margin-bottom: 1%;
+}
+
+#chisiamo h6 {
+	margin: 0;
+	margin-bottom: 5%;
+	color: var(--primary);
+}
+
+#lostudio {
+	color: var(--text);
+	border-radius: 10px;
+	padding: 5%;
+	margin-bottom: 5%;
+}
+
+#lostudio h1 {
+	display: inline-block;
+	padding-right: 0.5rem;
+	background-image: linear-gradient(90deg, var(--accent), var(--accent));
+	background-position: 0 85%;
+	background-size: 100% 0.5rem;
+	background-repeat: no-repeat;
+}
+
+#olgabrighenti,
+#lucafilippini,
+#pietrogasparato,
+#vittoriogasparato {
+	background-color: transparent;
+	border-left: 0.3rem solid var(--accent);
+	position: relative;
+	z-index: 10;
+	padding: var(--mobpad);
+	margin-bottom: 5%;
+}
+
+/*COSA FACCIAMO*/
+
+#cosafacciamo h1 {
+	margin-bottom: 3%;
+	display: inline-block;
+	padding-right: 0.5rem;
+	background-image: linear-gradient(90deg, var(--accent), var(--accent));
+	background-position: 0 85%;
+	background-size: 100% 0.5rem;
+	background-repeat: no-repeat;
+}
+
+#cosafacciamo_list {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 5%;
+}
+
+.sub-li {
+	margin-top: 3%;
+	/*margin-bottom: 3%;*/
+}
+
+.sub-ul {
+	border-left: 0.1rem solid var(--accent);
+}
+
+#cosafacciamo_list label {
+	display: flex;
+	cursor: pointer;
+	margin: 0;
+	align-items: center;
+}
+
+#cosafacciamo_list h4 {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#cosafacciamo_list input[type="checkbox"] {
+	display: none;
+}
+
+#cosafacciamo_list input[type="checkbox"]~ul li:nth-child(n) {
+	max-height: 0;
+	opacity: 0;
+	padding-left: 3%;
+	transform: translateY(var(--trch));
+	-webkit-transition: all 0s linear;
+	-moz-transition: all 0s linear;
+	-ms-transition: all 0s linear;
+	-o-transition: all 0s linear;
+	transition: all 0s linear;
+	z-index: -999;
+}
+
+#cosafacciamo_list input[type="checkbox"]:checked~ul li:nth-child(n) {
+	opacity: 1;
+	max-height: 100%;
+	transform: translate(0, 0);
+	-webkit-transition: transform calc(var(--nth-child) * 0.05s) ease-out, opacity calc(var(--nth-child) * 0.1s) ease-in;
+	-moz-transition: transform calc(var(--nth-child) * 0.05s) ease-out, opacity calc(var(--nth-child) * 0.1s) ease-in;
+	-ms-transition: transform calc(var(--nth-child) * 0.05s) ease-out, opacity calc(var(--nth-child) * 0.1s) ease-in;
+	-o-transition: transform calc(var(--nth-child) * 0.05s) ease-out, opacity calc(var(--nth-child) * 0.1s) ease-in;
+	transition: transform calc(var(--nth-child) * 0.05s) ease-out, opacity calc(var(--nth-child) * 0.1s) ease-in;
+}
+
+:nth-child(1) {
+	--nth-child: 1
+}
+
+:nth-child(2) {
+	--nth-child: 2
+}
+
+:nth-child(3) {
+	--nth-child: 3
+}
+
+:nth-child(4) {
+	--nth-child: 4
+}
+
+:nth-child(5) {
+	--nth-child: 5
+}
+
+:nth-child(6) {
+	--nth-child: 6
+}
+
+:nth-child(7) {
+	--nth-child: 7
+}
+
+:nth-child(8) {
+	--nth-child: 8
+}
+
+:nth-child(9) {
+	--nth-child: 9
+}
+
+:nth-child(10) {
+	--nth-child: 10
+}
+
+:nth-child(11) {
+	--nth-child: 11
+}
+
+#cosafacciamo_list {
+	--trch: calc(-100% * var(--nth-child))
+}
+
+
+/* CONTATTI */
+
+#contatti {
+	padding-bottom: 100px;
+	width: 100%;
+}
+
+#contatti h1 {
+	margin-bottom: 3%;
+	display: inline-block;
+	padding-right: 0.5rem;
+	background-image: linear-gradient(90deg, var(--accent), var(--accent));
+	background-position: 0 85%;
+	background-size: 100% 0.5rem;
+	background-repeat: no-repeat;
+}
+
+#contatti li {
+	display: block;
+	padding: 0 3% 0 3%;
+	margin-bottom: 3%;
+	border-left: 0.1rem solid var(--accent);
+}
+
+#gmap {
+	border-left: none !important;
+	padding: 0 !important;
+}
+
+#gmap iframe {
+	border-radius: 5px;
+}
